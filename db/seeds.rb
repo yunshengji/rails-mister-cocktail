@@ -11,7 +11,7 @@ require 'open-uri'
 buffer = open("https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list").read
 result = JSON.parse(buffer)
 result["drinks"].each_with_index do |ingredient, i|
-  if i < 8
+  if i < 20
   Ingredient.create(name: ingredient["strIngredient1"])
   end
 end

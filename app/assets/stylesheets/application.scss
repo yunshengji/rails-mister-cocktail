@@ -1,17 +1,47 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "layouts/index";
+@import "components/index";
+@import "pages/index";
+
+body {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),asset-url("pegu-club.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  color: white
+}
+
+p{
+  color: white;
+}
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+ }
+
+
+ .card {
+  height: 175px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+  position: relative;
+ }

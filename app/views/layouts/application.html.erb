@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>RailsMisterCocktail</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -10,7 +12,11 @@
   </head>
 
   <body>
-    <h1>聚酒一品</h1>
-    <%= yield %>
+
+        <div class = "header">
+          <h1>Cocktail</h1>
+          <%= link_to "create new cocktail", new_cocktail_path, class: "btn btn-primary center" %>
+        </div>
+      <%= yield %>
   </body>
 </html>

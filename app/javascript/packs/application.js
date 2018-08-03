@@ -4,7 +4,10 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 //
+import 'bootstrap';
+
 // To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
 // layout file, like app/views/layouts/application.html.erb
-
+//= require rails-ujs
+//= require_tree .
 console.log('Hello World from Webpacker')

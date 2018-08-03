@@ -11,6 +11,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+gem 'carrierwave', '~> 1.2'
 gem 'bootstrap-sass'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -25,17 +26,18 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
-
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'rest-client'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
+gem 'font-awesome-sass', '~> 5.0.9'
 gem 'simple_form'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'bootstrap'
-
+gem 'cloudinary'
+gem 'autoprefixer-rails'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'dotenv-rails', groups: [:development, :test]

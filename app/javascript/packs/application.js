@@ -10,4 +10,4 @@ import 'bootstrap';
 // layout file, like app/views/layouts/application.html.erb
 //= require rails-ujs
 //= require_tree .
-console.log('Hello World from Webpacker')
+

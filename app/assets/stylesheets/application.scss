@@ -15,33 +15,22 @@
 @import "pages/index";
 
 body {
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),asset-url("pegu-club.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),asset-url("beach-beverage-cocktail-68672.jpg");
   height: 100vh;
   background-size: cover;
 }
 
-h1 {
-  color: white;
-}
-
-h2 {
-  color: white
-}
-
-p{
-  color: white;
-}
-.header {
-    text-align: center;
-    margin-bottom: 60px;
- }
 
 
- .card {
-  height: 175px;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-  background-size: cover !important;
-  background-position: center;
-  color: white;
-  position: relative;
- }
+
+
+
+
+.btn-success {
+    color: #fff;
+    background-color: #2DA3AA;
+    border-color: #289096;
+    border-radius: 17px;
+    }
+
+

@@ -7,16 +7,23 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body>
 
         <div class = "header">
-          <h1>Cocktail</h1>
-          <%= link_to "create new cocktail", new_cocktail_path, class: "btn btn-primary center" %>
+          <h1>Cocktail Gee</h1>
+        </div>
+        <div class = "headbut">
+          <%= link_to "Add your cocktail", new_cocktail_path, class: "btn btn-success center" %>
         </div>
       <%= yield %>
+
+
+
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </body>
 </html>

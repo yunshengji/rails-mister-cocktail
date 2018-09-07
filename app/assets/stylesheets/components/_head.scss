@@ -1,0 +1,22 @@
+h1 {
+  color: white;
+}
+.header {
+    h1 {
+    font-family: 'Pacifico', cursive;
+     color: #EB9486;
+     font-size:85px;
+     opacity:0.75;
+    }
+    text-align: center;
+    margin-bottom: 120px;
+    margin-top: 100px;
+
+
+ }
+.headbut{
+  display: flex;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+}

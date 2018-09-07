@@ -1,21 +1,22 @@
 <div class="container">
   <div class="row">
-    <div class="col-xs-12 col-md-4 ">
-      <div class = "card">
+
       <% @cocktails.each do |cocktail| %>
-
-      <p><%= cocktail.name %> </p>
-      <p> <%= link_to "detail", cocktail_path(cocktail) %> </p>
-      <p> <%= link_to "add a dose", new_cocktail_dose_path(cocktail) %> </p>
-      <p> <%= link_to "Delete a cocktail", cocktail_path(cocktail),
+      <div class="col-xs-12 col-md-4">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= cocktail.image_url %>);">
+      <div class = "card-category"><p><%= cocktail.name %> </p></div>
+      <div class = "card-description">
+      <p> <%= link_to "detail", cocktail_path(cocktail), class: "link_text"%> </p>
+      <p> <%= link_to "add a dose", new_cocktail_dose_path(cocktail),class: "link_text" %> </p>
+      <p> <%= link_to "Delete", cocktail_path(cocktail),
       method: :delete,
-      data: { confirm: "Are you sure?" } %> </p>
-  <% end%>
+      data: { confirm: "Are you sure?" },class: "link_text" %> </p>
+      </div>
+      </div>
+      </div>
+      <% end%>
 </div>
 </div>
-</div>
-</div>
-
 
 
 

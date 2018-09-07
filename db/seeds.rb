@@ -16,10 +16,3 @@ result["drinks"].each_with_index do |ingredient, i|
   end
 end
 
-Cocktail.create(name: "Margarita")
-Cocktail.create(name: "Martini")
-Cocktail.create(name: "Manhattan")
-Cocktail.create(name: "Brooklyn")
-Dose.create(cocktail_id: 1, ingredient_id: 1,description: "the Margarita cocktail needs 6cl of lemon")
-Dose.create(cocktail_id: 1, ingredient_id: 2,description: "the Margarita cocktail needs 2cl of water")
-Dose.create(cocktail_id: 2, ingredient_id: 2,description: "the Martini cocktail needs 5cl of sugar")
